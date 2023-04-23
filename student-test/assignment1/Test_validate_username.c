@@ -12,11 +12,10 @@
 *   3) Use unity assertion TEST_ASSERT_EQUAL_STRING_MESSAGE to verify the two strings are equal.  See
 *       the [unity assertion reference](https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityAssertionsReference.md)
 */
-void test_validate_my_username()
-{
+void test_validate_my_username() {
     /**
-     * TODO: Replace the line below with your code here as described above to verify your /conf/username.txt 
+     * TODO: Replace the line below with your code here as described above to verify your /conf/username.txt
      * config file and my_username() functions are setup properly
      */
-    TEST_ASSERT_TRUE_MESSAGE(false,"AESD students, please fix me!");
+    TEST_ASSERT_EQUAL_STRING(my_username(), malloc_username_from_conf_file());
 }
